@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (max-width:36rem) {
+  .container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

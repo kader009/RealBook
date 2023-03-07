@@ -1,0 +1,27 @@
+.detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10%;
+}
+.width{
+  max-width: 40rem;
+}
+.detail .img img{
+  height: 100%;
+  border-radius: 0.25rem;
+}
+@media only screen and (max-width:36rem) {
+  html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .detail{
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+}
