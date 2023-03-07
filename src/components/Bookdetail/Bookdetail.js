@@ -4,8 +4,10 @@ import './Bookdetail.css'
 
 
 const Bookdetail = () => {
+
+  //todo: useloader for data
+
   const data = useLoaderData();
-  // console.log(data);
   const {title, authors, image_url, description, genre_list, rating, rating_count
   } = data;
 
@@ -23,7 +25,7 @@ const Bookdetail = () => {
         <p className='text-secondary fs-6'>Genre : {genre_list}</p>
         <p className='text-secondary'>Description : {description.slice(0,600) + '...'}</p>
         <p className=' fw-bold'>Rating : {rating}</p>
-        <p className=' fw-bold'>Count-sale : {rating_count}</p>
+        <p className='fw-bold'>Count-sale : {rating_count}</p>
         </div>
     </div>
   );

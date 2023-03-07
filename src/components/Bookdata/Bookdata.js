@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 import './Bookdata.css'
 
 const Bookdata = ({data}) => {
+
+  //todo: data destructure and show here...
+
   const {title, authors, image_url, id} = data;
+
   return (
     <div className='mb-4'>
       <Card style={{ width: '22rem', height:'32rem' }}>
@@ -15,7 +19,6 @@ const Bookdata = ({data}) => {
         <Card.Title> <h6>Book: {title}</h6></Card.Title>
         <Card.Text>
           <small className=' fw-semibold'>Author: {authors}</small>
-          
         </Card.Text>
         <Link to={`/detail/${id}`}>
         <Button variant="outline-dark">Book Detail</Button>

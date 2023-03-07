@@ -9,6 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
   return (
     <div className='mb-5'>
+      
       <Navbar expand="lg">
       <Container >
         <Navbar.Brand href="#" className='fw-semibold'>RealBook</Navbar.Brand>
@@ -20,8 +21,8 @@ const Header = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
             
           </Nav>
           <Form className="d-flex">

@@ -9,8 +9,9 @@ import './Booklist.css'
 const BookList = () => {
   const [datas, setdata] = useState([]); 
 
+  //todo:  data fetching here
+  
   axios.get(`https://example-data.draftbit.com/books?_limit=20`) 
-
   .then(res => setdata(res.data))
   .catch(error => console.error(error))
 
